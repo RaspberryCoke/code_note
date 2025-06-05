@@ -2,6 +2,16 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+/*
+dfs函数中
+这里是进行选数。
+
+
+
+
+
+
+*/
 //https://leetcode.cn/problems/permutations/solutions/218275/quan-pai-lie-by-leetcode-solution-2/
 class Solution {
     public:
