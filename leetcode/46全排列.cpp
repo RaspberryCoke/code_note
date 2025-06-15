@@ -14,7 +14,7 @@ dfs函数中
 */
 //https://leetcode.cn/problems/permutations/solutions/218275/quan-pai-lie-by-leetcode-solution-2/
 class Solution {
-    public:
+    public://全排列
         void dfs(vector<int>& nums, vector<bool> &used, vector<vector<int>> &res, vector<int> &path) {
             // 处理递归的边界情况
             if (path.size() == nums.size()) {
@@ -39,7 +39,8 @@ class Solution {
             vector<vector<int>> res;
             vector<bool> used(nums.size(), false);
             vector<int> path;
-            // 需要一个用于进行递归的函数,这个函数需要传递进行三个参数：used数组，res数组以及nums数组以及path数组
+            // 需要一个用于进行递归的函数,这个函数需要传递进行三个参数：
+            //used数组，res数组以及nums数组以及path数组
             dfs(nums, used, res, path);
             return res;
             // 最后返回结果即可

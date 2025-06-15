@@ -10,7 +10,7 @@
  * };
  */
 class Solution {
-public:
+public:// inorder
     vector<int> inorderTraversal(TreeNode* root) {
         if(root==nullptr)return {};
         stack<TreeNode*> s;

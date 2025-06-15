@@ -15,7 +15,7 @@
 输出：[1,2,4,5,6,7,3,8,9]
  */
 class Solution {
-public:
+public://先序遍历
     vector<int> preorderTraversal(TreeNode* root) {
         if(!root)return {};
         stack<TreeNode*> s;
