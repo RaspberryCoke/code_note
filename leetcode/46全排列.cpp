@@ -1,18 +1,23 @@
-#include<bits/stdc++.h>
-#include<iostream>
-#include<vector>
-#include<algorithm>
-/*
-dfs函数中
-这里是进行选数。
-
-
-
-
-
-
-*/
-//https://leetcode.cn/problems/permutations/solutions/218275/quan-pai-lie-by-leetcode-solution-2/
+// class Solution {
+// public:
+//     vector<vector<int>> permute(vector<int>& nums) {
+//         vector<vector<int>> res;
+//         func(nums,res,0);
+//         return res;
+//     }
+//     void func(vector<int>& nums,vector<vector<int>>& res,int level){
+//         if(level<0||level>=nums.size())return;
+//         if(level==(nums.size()-1)){
+//             res.push_back(nums);
+//             return;
+//         }
+//         for(int i=level;i<nums.size();i++){
+//             swap(nums[i],nums[level]);
+//             func(nums,res,level+1);
+//             swap(nums[i],nums[level]);
+//         }
+//     }
+// };
 class Solution {
     public://全排列
         void dfs(vector<int>& nums, vector<bool> &used, vector<vector<int>> &res, vector<int> &path) {
@@ -45,4 +50,4 @@ class Solution {
             return res;
             // 最后返回结果即可
         }
-    };
+};
